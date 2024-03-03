@@ -1,0 +1,173 @@
+html {
+  background: none;
+}
+
+body {
+  /*background: linear-gradient(to bottom, #ffffff, #e0f8e0, #9acd32);*/
+  background: linear-gradient(to bottom, #d9f8d9, #e0f8e0, #9acd32); /* Add new background color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  background: linear-gradient(to bottom, #d9f8d9, #e0f8e0, #9acd32);
+   /* Making the header transparent */
+  color: #333;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  flex: 1; /* Logo container takes up remaining space */
+}
+
+.logo {
+  max-width: 200px; /* Adjust as needed */
+  max-height: 100px; /* Adjust as needed */
+}
+
+.header-content {
+  flex: 3; /* Header content takes up more space */
+}
+
+.winner-list {
+  margin-top: 20px; /* Add margin to the top */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+.separator {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+}
+
+.text-container {
+  align-self: flex-start;
+  flex: 1; /* Take up remaining space */
+  text-align: center;
+}
+
+.rolling-image-container {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  margin-right: 200px;
+  justify-content: flex-end; /* Align content to the right */
+}
+
+/* Rolling image styles */
+.rolling-image {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  max-height: 400px; /* Adjust the maximum height as needed */
+}
+
+@keyframes colorChange {
+  0% { color: #0074D9; } /* Blue */
+  25% { color: #2ECC40; } /* Green */
+  50% { color: #FFDC00; } /* Yellow */
+  75% { color: #FF851B; } /* Orange */
+  100% { color: #0074D9; } /* Back to Blue */
+}
+
+.unique-link {
+  animation: colorChange 5s infinite;
+  /*color: #FF5733; /* Set a unique color for the link */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  /*transition: color 1s ease;*/
+}
+
+.unique-link:hover {
+  color: #E63946; /* Change color on hover */
+}
+
+
+.office-bearers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity for office bearers section */
+  padding: 20px;
+}
+
+.office-bearer {
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.staff-coordinator {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .office-bearer {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .office-bearer, .staff-coordinator {
+    flex-basis: 100%;
+  }
+}
+
+.image-row {
+  display: flex;
+  justify-content: center; /* Center align the images horizontally */
+  align-items: center; /* Center align the images vertically */
+}
+
+.attractive-image {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  margin: 0 10px; /* Adjust the margin between images */
+  border-radius: 10px; /* Apply border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.attractive-image:hover {
+  transform: scale(3); /* Scale up on hover */
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

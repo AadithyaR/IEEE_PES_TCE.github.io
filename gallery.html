@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - IEEE PES TCE Student Chapter</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .main-content {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease, filter 0.3s ease; /* Added filter transition */
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.4); /* Increased scale for zoom effect */
+      filter: brightness(150%); /* Increased brightness on hover */
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="ieee_logo.jpg" alt="IEEE Logo" class="logo">
+    </div>
+    <div class="header-content">
+      <h1>Gallery</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="notifications.html">Notifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="separator"></div>
+
+  <section class="main-content">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="gallery/image1.jpg" alt="Image 1">
+      </div>
+      <div class="gallery-item">
+        <img src="gallery/image2.jpg" alt="Image 2">
+      </div>
+      <div class="gallery-item">
+        <img src="gallery/image3.jpg" alt="Image 3">
+      </div>
+
+      <!-- Add more gallery items here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 IEEE PES TCE Student Chapter</p>
+  </footer>
+</body>
+</html>
