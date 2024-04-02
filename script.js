@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const rollingImages = ["image0.jpg","image1.jpg", "image2.jpg", "image3.jpg"]; // Add your image URLs
+  const rollingImages = ["image1.jpg", "image2.jpg", "image3.jpg"]; // Add your image URLs
   const interval = 2000; // Change image every 3 seconds (adjust as needed)
   let index = 0;
 
